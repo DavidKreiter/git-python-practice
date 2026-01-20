@@ -2,7 +2,7 @@ from datetime import datetime
 
 def greet(name):
     current_time = datetime.now().strftime("%H:%M")
-    return f"Hi, {name}! Current time is {current_time}"
+    return f"Hi, {name}! (combined main + conflict branch)"
 
 if __name__ == "__main__":
     user = "World"
