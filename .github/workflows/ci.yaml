@@ -24,9 +24,3 @@ jobs:
         with:
           username: ${{ secrets.USERNAME_PRACTICE }}
           password: ${{ secrets.SECRET_PRACTICE }}
-
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-           push: true
-           tags: myuser/myapp:${{ github.sha }}
